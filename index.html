@@ -9,14 +9,21 @@
   ============================================================
 -->
 <script>
-  var SITE_URL = "https://yapay-zeka-deneme-o3urhp9ui-itfaiye1.vercel.app/";
+  var SITE_URL = "https://linkinizi-buraya-yazin.com";
 
   // Sayfa daha görünmeden, hemen yönlendirmeyi dener. Bu başarılı
   // olursa kullanıcı aşağıdaki karşılama sayfasını hiç görmeden
   // doğrudan uygulamaya gider. Başarısız olursa (tarayıcı engellerse,
   // JS kapalıysa vb.) sayfa normal şekilde açılır ve aşağıdaki
   // "Sayfaya giriş için tıklayınız" bağlantısı devreye girer.
-  try { window.location.replace(SITE_URL); } catch (e) { /* sessiz geç, karşılama sayfası açılsın */ }
+  //
+  // Test/önizleme için: linkin sonuna ?stay eklerseniz (örn.
+  // https://kullaniciadi.github.io/repo/?stay) otomatik yönlendirme
+  // YAPILMAZ, karşılama sayfasını görebilirsiniz.
+  var params = new URLSearchParams(window.location.search);
+  if (!params.has("stay")) {
+    try { window.location.replace(SITE_URL); } catch (e) { /* sessiz geç, karşılama sayfası açılsın */ }
+  }
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
