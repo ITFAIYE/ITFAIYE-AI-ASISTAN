@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<!--
+  ============================================================
+  GÜNCEL UYGULAMA LİNKİ — SADECE AŞAĞIDAKİ SATIRI DEĞİŞTİR
+  Link her değiştiğinde bu tek satırı güncellemen yeterli,
+  sayfanın başka hiçbir yerinde link aramana gerek yok.
+  ============================================================
+-->
+<script>
+  var SITE_URL = "https://linkinizi-buraya-yazin.com";
+
+  // Sayfa daha görünmeden, hemen yönlendirmeyi dener. Bu başarılı
+  // olursa kullanıcı aşağıdaki karşılama sayfasını hiç görmeden
+  // doğrudan uygulamaya gider. Başarısız olursa (tarayıcı engellerse,
+  // JS kapalıysa vb.) sayfa normal şekilde açılır ve aşağıdaki
+  // "Sayfaya giriş için tıklayınız" bağlantısı devreye girer.
+  try { window.location.replace(SITE_URL); } catch (e) { /* sessiz geç, karşılama sayfası açılsın */ }
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>İtfaiye Araçları Kullanım Asistanı</title>
+<meta name="theme-color" content="#14171a">
+<style>
+  :root{
+    --bg:#14171a;
+    --bg-alt:#1a1d21;
+    --card:#1f2327;
+    --text:#edeef0;
+    --text-muted:#9aa2ab;
+    --red:#c1272d;
+    --red-dark:#8f1c21;
+    --border:#2a2e33;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(193,39,45,.14), transparent 45%),
+      radial-gradient(circle at 100% 100%, rgba(193,39,45,.08), transparent 40%),
+      var(--bg);
+    color:var(--text);
+  }
+  .card{
+    width:100%;
+    max-width:560px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:40px 32px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+  }
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:.72rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    border:1px solid var(--border);
+    background:var(--bg-alt);
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:22px;
+  }
+  .badge::before{content:"🚒";font-size:.9rem}
+  h1{
+    font-size:1.28rem;
+    line-height:1.5;
+    font-weight:600;
+    margin:0 0 28px;
+    color:var(--text);
+  }
+  h1 b{color:#fff}
+  .cta{
+    display:inline-block;
+    width:100%;
+    background:var(--red);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    font-size:1.05rem;
+    padding:16px 22px;
+    border-radius:12px;
+    transition:background .15s, transform .15s;
+  }
+  .cta:hover{background:var(--red-dark);transform:translateY(-1px)}
+  .cta:active{transform:translateY(0)}
+  .redirect-note{
+    margin:14px 0 0;
+    font-size:.8rem;
+    color:var(--text-muted);
+  }
+  hr{
+    border:none;
+    border-top:1px solid var(--border);
+    margin:32px 0 24px;
+  }
+  .summary{
+    text-align:left;
+  }
+  .summary h2{
+    font-size:.72rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    margin:0 0 12px;
+    font-weight:600;
+  }
+  .summary p{
+    font-size:.92rem;
+    line-height:1.65;
+    color:var(--text-muted);
+    margin:0 0 12px;
+  }
+  .summary ul{
+    margin:0;
+    padding-left:20px;
+    color:var(--text-muted);
+    font-size:.9rem;
+    line-height:1.7;
+  }
+  .summary li{margin-bottom:4px}
+  .summary strong{color:var(--text)}
+  footer{
+    margin-top:28px;
+    font-size:.75rem;
+    color:var(--text-muted);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">Yapay Zekâ Destekli</span>
+
+    <h1>
+      <b>Abdullah KARADUMAN</b> tarafından özenle hazırlanan yapay zeka
+      destekli itfaiye araçları kullanım asistanına hoşgeldiniz.
+    </h1>
+
+    <a class="cta" id="giris-link" href="#">Sayfaya giriş için tıklayınız →</a>
+    <p class="redirect-note">Otomatik yönlendirilmediyseniz yukarıdaki bağlantıya tıklayabilirsiniz.</p>
+
+    <hr>
+
+    <div class="summary">
+      <h2>Bu sistem ne işe yarar?</h2>
+      <p>
+        İtfaiye personelinin araç kullanımı, bakım ve acil müdahale
+        sorularını, aracın kendi kullanım kılavuzuna dayanarak yapay
+        zekâ ile saniyeler içinde yanıtlayan bir asistandır.
+      </p>
+      <ul>
+        <li><strong>Kılavuz taraması:</strong> Sorular, yüklenen resmi PDF kullanım kılavuzları üzerinden yanıtlanır.</li>
+        <li><strong>Yönetici bilgi birikimi:</strong> Kılavuzda olmayan sorular yöneticiye iletilir; verilen cevaplar sisteme kaydedilerek sonraki aynı/benzer sorularda otomatik kullanılır.</li>
+        <li><strong>Saha notları:</strong> Araç üzerinde sonradan yapılan değişiklikler veya kılavuzda yazmayan bilgiler, yöneticiler tarafından not olarak eklenip asistana kaynak olarak sunulur.</li>
+        <li><strong>Personel bazlı erişim:</strong> Her personel kendi hesabıyla giriş yapar, geçmiş sorularını görebilir.</li>
+      </ul>
+    </div>
+
+    <footer>Ankara İtfaiyesi · Araç Kullanım Asistanı</footer>
+  </div>
+
+<script>
+  document.getElementById("giris-link").href = SITE_URL;
+</script>
+</body>
+</html>
